@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"type":"text","text":"Rxjs","id":"c0400ca22837c046","x":-997,"y":-57,"width":84,"height":60},
+		{"type":"text","text":"Hot Observable：\n1.同一个observable给所有observer\n2.同一数据源","id":"2d9f858109a2c502","x":273,"y":7,"width":183,"height":119},
+		{"type":"text","text":"Cold Observable：\n1.每次返回一个新的observable给observer\n2.不同数据源","id":"6399169fa6b48085","x":274,"y":-178,"width":182,"height":135},
+		{"type":"text","text":"❌广播","id":"b40a5864f078a4be","x":-541,"y":200,"width":125,"height":60},
+		{"type":"text","text":"Observer(观察者，订阅者)","id":"875d85b2e6279da1","x":-541,"y":-195,"width":250,"height":60},
+		{"type":"text","text":"Observable(可被观察者，发布者)","id":"5b5e7c2335243dae","x":-180,"y":-259,"width":300,"height":54},
+		{"type":"text","text":"✅单播","id":"9ea4b684039bcf7a","x":196,"y":-259,"width":120,"height":54},
+		{"type":"text","text":"Observable(可被观察者，发布者)","id":"70a5ee7003d1a0c5","x":-541,"y":-40,"width":300,"height":54},
+		{"type":"text","text":"✅多播(同一数据源)","id":"09566522e147e3da","x":560,"y":-160,"width":120,"height":60},
+		{"type":"text","text":"天然支持多播","id":"fe35d5281d87c520","x":520,"y":36,"width":134,"height":61},
+		{"type":"text","text":"创建类操作符\n1. fromPromise\n2. fromEvent\n3. fromEventPattern","id":"759bf2b4342f183d","x":780,"y":-6,"width":213,"height":145},
+		{"type":"text","text":"1. 借助subject实现多播\n2. Cold Observable 转换为HotObservabl","id":"d97539b3f90d7aee","x":801,"y":-190,"width":280,"height":93},
+		{"type":"text","text":"创建类操作符\n1. interval\n2. range\n3. of","id":"16aa77a0167b459c","x":1200,"y":-214,"width":213,"height":150},
+		{"type":"text","text":"Observer1","id":"2c3d993b7cd5c1d3","x":1500,"y":-244,"width":160,"height":60},
+		{"id":"005675d0029ce1ab","x":1501,"y":-124,"width":159,"height":60,"type":"text","text":"Observer2"},
+		{"id":"bd0429fe3685efee","x":1114,"y":-3,"width":146,"height":60,"type":"text","text":"Observer1"},
+		{"id":"c51cdee068511386","x":1112,"y":91,"width":148,"height":60,"type":"text","text":"Observer2"}
+	],
+	"edges":[
+		{"id":"b7e5fc787aa8c534","fromNode":"70a5ee7003d1a0c5","fromSide":"right","toNode":"6399169fa6b48085","toSide":"left"},
+		{"id":"f13f67af017ec088","fromNode":"70a5ee7003d1a0c5","fromSide":"right","toNode":"2d9f858109a2c502","toSide":"left"},
+		{"id":"ab0c4faa54d72d66","fromNode":"c0400ca22837c046","fromSide":"right","toNode":"b40a5864f078a4be","toSide":"left"},
+		{"id":"57a1a878d29c4eb0","fromNode":"875d85b2e6279da1","fromSide":"right","toNode":"5b5e7c2335243dae","toSide":"left"},
+		{"id":"a8b62b01dada4f5d","fromNode":"c0400ca22837c046","fromSide":"right","toNode":"875d85b2e6279da1","toSide":"left"},
+		{"id":"3551cc684bfdadb8","fromNode":"5b5e7c2335243dae","fromSide":"right","toNode":"9ea4b684039bcf7a","toSide":"left"},
+		{"id":"6343b8e83360162e","fromNode":"c0400ca22837c046","fromSide":"right","toNode":"70a5ee7003d1a0c5","toSide":"left"},
+		{"id":"1e0f0d444e2d5ecb","fromNode":"6399169fa6b48085","fromSide":"right","toNode":"09566522e147e3da","toSide":"left"},
+		{"id":"27b2049c967174ca","fromNode":"2d9f858109a2c502","fromSide":"right","toNode":"fe35d5281d87c520","toSide":"left"},
+		{"id":"a1342e12d7db2c63","fromNode":"fe35d5281d87c520","fromSide":"right","toNode":"759bf2b4342f183d","toSide":"left"},
+		{"id":"0692582f12b4f7e4","fromNode":"09566522e147e3da","fromSide":"right","toNode":"d97539b3f90d7aee","toSide":"left"},
+		{"id":"112458430a370118","fromNode":"d97539b3f90d7aee","fromSide":"right","toNode":"16aa77a0167b459c","toSide":"left"},
+		{"id":"6f12adba470523cc","fromNode":"16aa77a0167b459c","fromSide":"right","toNode":"2c3d993b7cd5c1d3","toSide":"left"},
+		{"id":"1eb3f31aa5f3d76b","fromNode":"16aa77a0167b459c","fromSide":"right","toNode":"005675d0029ce1ab","toSide":"left"},
+		{"id":"76f563d55d785a13","fromNode":"759bf2b4342f183d","fromSide":"right","toNode":"bd0429fe3685efee","toSide":"left"},
+		{"id":"4e96cd0d9d182ea5","fromNode":"759bf2b4342f183d","fromSide":"right","toNode":"c51cdee068511386","toSide":"left"}
+	]
+}
